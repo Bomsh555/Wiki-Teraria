@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Terraria — Колекція мечів</title>
+    <style>
+        :root{
+            --bg:#0b1220; --card:#0f1724; --muted:#9aa4b2; --accent:#d97706;
+            --glass: rgba(255,255,255,0.03);
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        }
+        *{box-sizing:border-box}
+        body{margin:0; min-height:100vh; background:linear-gradient(180deg,#071025 0%, #081226 60%); color:#e6eef6}
+        header{padding:28px 20px; text-align:center}
+        header h1{margin:0;font-size:clamp(20px,3vw,34px)}
+        header p{color:var(--muted); margin-top:6px}
+
+        .container{max-width:1100px;margin:22px auto;padding:16px}
+
+        .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+
+        .card{background:var(--card);border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.6);overflow:hidden;transition:transform .18s ease, box-shadow .18s ease}
+        .card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(2,6,23,0.65)}
+
+        .thumb{width:100%;height:180px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--glass);}
+        .thumb img{width:auto;height:100%;display:block}
+
+        .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+        .meta .name{font-weight:700}
+        .meta .atk{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:700}
+
+        .desc{color:var(--muted);font-size:13px;margin-top:8px;min-height:46px}
+
+        .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+        .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03)}
+
+        footer{max-width:1100px;margin:18px auto;color:var(--muted);font-size:13px;padding:0 16px}
+
+        @media (max-width:480px){.thumb{height:140px}.meta .atk{padding:5px 8px}}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Terraria — колекція мечів</h1>
+</header>
+
+<main class="container">
+    <section class="grid">
+
+        <!-- Pre-Hardmode swords -->
+        <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTshrGS2D37sN9YwTqKN8P6XEDMpU3Q4itEDg&s" alt="Copper Shortsword"></div><div class="meta"><div class="name">Copper Shortsword</div><div class="atk">Atk: 5</div></div><div class="desc">Стартовий меч гравця. Дуже слабкий.</div><div class="tags"><span class="tag">Прехардмод</span><span class="tag">Початковий</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.redd.it/i-resprited-iron-broadsword-and-boomstick-with-1x1-pixels-v0-jamz4x2lvrda1.png?width=600&format=png&auto=webp&s=389332094f93b9a40ba40b7b4133150a1836cf89"></div><div class="meta"><div class="name">Iron Broadsword</div><div class="atk">Atk: 10</div></div><div class="desc">Надійна зброя ранньої гри.</div><div class="tags"><span class="tag">Прехардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://cdna.artstation.com/p/assets/images/images/048/121/836/large/shimon-ifraimov-sword-3.jpg?1649255676" alt="Enchanted Sword"></div><div class="meta"><div class="name">Enchanted Sword</div><div class="atk">Atk: 23</div></div><div class="desc">Рідкісний меч, який можна знайти у Shrine.</div><div class="tags"><span class="tag">Прехардмод</span><span class="tag">Рідкісний</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://cdnb.artstation.com/p/assets/images/images/065/294/129/large/antione-allen-truenightsedge.jpg?1689993157" alt="Night's Edge"></div><div class="meta"><div class="name">Night's Edge</div><div class="atk">Atk: 42</div></div><div class="desc">Легендарний меч, що створюється з кількох інших.</div><div class="tags"><span class="tag">Прехардмод</span><span class="tag">Легендарний</span></div></article>
+
+        <!-- Hardmode swords -->
+        <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMHnFy2iySrJsQSAYnMltbNYE9pwCbKmvSw&s" alt="Excalibur"></div><div class="meta"><div class="name">Excalibur</div><div class="atk">Atk: 66</div></div><div class="desc">Могутній меч, що куються з Hallowed Bar.</div><div class="tags"><span class="tag">Хардмод</span><span class="tag">Hallowed</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.redd.it/2o3ccaklpfw71.png" alt="Breaker Blade"></div><div class="meta"><div class="name">Breaker Blade</div><div class="atk">Atk: 43</div></div><div class="desc">Випадає з WoF. Дуже великий і повільний.</div><div class="tags"><span class="tag">Хардмод</span><span class="tag">Boss Drop</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/86776bff-4fca-4fbb-9a0e-c3e7d8ba89a1/d7rcgg1-bd593acd-142e-43aa-911c-e0df20d3e742.jpg/v1/fit/w_414,h_690,q_70,strp/terraria___cutlass_by_blacksmithowy_d7rcgg1-414w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvODY3NzZiZmYtNGZjYS00ZmJiLTlhMGUtYzNlN2Q4YmE4OWExXC9kN3JjZ2cxLWJkNTkzYWNkLTE0MmUtNDNhYS05MTFjLWUwZGYyMGQzZTc0Mi5qcGciLCJ3aWR0aCI6Ijw9NDgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.AZwBYyscnqiy5QPy9NIcZPbR4we_8mzxRV2SiOe4DG8" alt="Cutlass"></div><div class="meta"><div class="name">Cutlass</div><div class="atk">Atk: 49</div></div><div class="desc">Випадає з піратів. Швидкий і сильний.</div><div class="tags"><span class="tag">Хардмод</span><span class="tag">Рідкісний</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyowYZIJ_1ek73IV6EP7nH6NmB-DF-iOSAQQ&s" alt="Keybrand"></div><div class="meta"><div class="name">Keybrand</div><div class="atk">Atk: 85</div></div><div class="desc">Меч, який випадає у Dungeon у хардмоді.</div><div class="tags"><span class="tag">Хардмод</span><span class="tag">Dungeon</span></div></article>
+
+        <!-- Endgame swords -->
+        <article class="card"><div class="thumb"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0b05eb4a-e3bf-4a96-a20e-695887f7fe24/ddm7dmh-cf8c14d6-528c-4aef-ad37-4574427818e9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wYjA1ZWI0YS1lM2JmLTRhOTYtYTIwZS02OTU4ODdmN2ZlMjQvZGRtN2RtaC1jZjhjMTRkNi01MjhjLTRhZWYtYWQzNy00NTc0NDI3ODE4ZTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KQ_67A_6aNvyd3ezTOXVGuTgVw281NJjvyJGErM5qfI" alt="Terra Blade"></div><div class="meta"><div class="name">Terra Blade</div><div class="atk">Atk: 95</div></div><div class="desc">Один із найсильніших мечів, що випускає енергетичні хвилі.</div><div class="tags"><span class="tag">Ендгейм</span><span class="tag">Легендарний</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://pbs.twimg.com/media/EqcPIREXIAE6E43.jpg:large" alt="Influx Waver"></div><div class="meta"><div class="name">Influx Waver</div><div class="atk">Atk: 110</div></div><div class="desc">Випадає з інопланетян. Викликає кілька ударів.</div><div class="tags"><span class="tag">Ендгейм</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyc4hlDRogwlJOKsJn2X0m7lq5H8t2-y5rQ&s" alt="Meowmere"></div><div class="meta"><div class="name">Meowmere</div><div class="atk">Atk: 200</div></div><div class="desc">Смішний, але дуже сильний меч із котячими снарядами.</div><div class="tags"><span class="tag">Ендгейм</span><span class="tag">Легендарний</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://pm1.aminoapps.com/6134/74d3dd964bbbbfb28caf6890c6592dd8b6430da4_00.jpg" alt="Star Wrath"></div><div class="meta"><div class="name">Star Wrath</div><div class="atk">Atk: 170</div></div><div class="desc">Викликає зорі з неба, схожий на Starfury але значно сильніший.</div><div class="tags"><span class="tag">Ендгейм</span><span class="tag">Легендарний</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTrk9XzD2TH2lL2IypWYYsGtwyLuo_l96gA&s" alt="Zenith"></div><div class="meta"><div class="name">Zenith</div><div class="atk">Atk: 190</div></div><div class="desc">Найпотужніший меч Terraria, що поєднує силу багатьох інших.</div><div class="tags"><span class="tag">Ендгейм</span><span class="tag">Найсильніший</span></div></article>
+
+    </section>
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
