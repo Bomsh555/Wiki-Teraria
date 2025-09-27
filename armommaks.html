@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Terraria — Колекція броні</title>
+    <style>
+        :root{
+            --bg:#0b1220; --card:#0f1724; --muted:#9aa4b2; --accent:#d97706;
+            --glass: rgba(255,255,255,0.03);
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        }
+        *{box-sizing:border-box}
+        body{margin:0; min-height:100vh; background:linear-gradient(180deg,#071025 0%, #081226 60%); color:#e6eef6}
+        header{padding:28px 20px; text-align:center}
+        header h1{margin:0;font-size:clamp(20px,3vw,34px)}
+        header p{color:var(--muted); margin-top:6px}
+
+        .container{max-width:1100px;margin:22px auto;padding:16px}
+
+        .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+
+        .card{background:var(--card);border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.6);overflow:hidden;transition:transform .18s ease, box-shadow .18s ease}
+        .card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(2,6,23,0.65)}
+
+        .thumb{width:100%;height:180px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--glass);}
+        .thumb img{width:auto;height:100%;display:block}
+
+        .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+        .meta .name{font-weight:700}
+        .meta .def{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:700}
+
+        .desc{color:var(--muted);font-size:13px;margin-top:8px;min-height:46px}
+
+        .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+        .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03)}
+
+        footer{max-width:1100px;margin:18px auto;color:var(--muted);font-size:13px;padding:0 16px}
+
+        /* responsive tweaks */
+        @media (max-width:480px){.thumb{height:140px}.meta .def{padding:5px 8px}}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Terraria — колекція броні</h1>
+</header>
+
+<main class="container">
+    <section class="grid">
+
+        <!-- Pre-Hardmode -->
+        <article class="card"><div class="thumb"><img src="https://preview.redd.it/copper-armor-resprite-v0-3n12cejttqu91.png?auto=webp&s=f6534d32fd19d90178fe4dd3b5c7b5c729b427c6" alt="Copper Armor"></div><div class="meta"><div class="name">Copper Armor</div><div class="def">Def: 8</div></div><div class="desc">Проста початкова броня. Підходить для перших годин гри.</div><div class="tags"><span class="tag">Клас: Універсальний</span><span class="tag">Рівень: Початковий</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.ytimg.com/vi/gSgjl1YKIYI/sddefault.jpg" alt="Iron Armor"></div><div class="meta"><div class="name">Iron Armor</div><div class="def">Def: 10</div></div><div class="desc">Надійна броня ранньої гри.</div><div class="tags"><span class="tag">Рівень: Початковий</span><span class="tag">Клас: Універсальний</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://images.steamusercontent.com/ugc/2065504494149344800/2AFC660C34531E7DA4CA0848ED8CA69586B05B0D/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Gold Armor"></div><div class="meta"><div class="name">Gold Armor</div><div class="def">Def: 12</div></div><div class="desc">Проміжний набір перед сильнішими сетами.</div><div class="tags"><span class="tag">Рівень: Початковий</span><span class="tag">Клас: Універсальний</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBh4n_rcUJKRTx6Ij-pNV5C5I-Hyt111E6CQ&s" alt="Shadow Armor"></div><div class="meta"><div class="name">Shadow Armor</div><div class="def">Def: 16</div></div><div class="desc">Підходить для ближнього бою та швидкості.</div><div class="tags"><span class="tag">Рівень: Прехардмод</span><span class="tag">Клас: Ближній бій</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://pm1.aminoapps.com/6764/76d03eb2aec7006c4008c1799689c9168bf1faaav2_hq.jpg" alt="Jungle Armor"></div><div class="meta"><div class="name">Jungle Armor</div><div class="def">Def: 13</div></div><div class="desc">Магічна броня з бонусами для мани.</div><div class="tags"><span class="tag">Рівень: Прехардмод</span><span class="tag">Клас: Магія</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.redd.it/i4350m1stgo41.png" alt="Molten Armor"></div><div class="meta"><div class="name">Molten Armor</div><div class="def">Def: 24</div></div><div class="desc">Сильна броня для ближнього бою, дає високу оборону.</div><div class="tags"><span class="tag">Клас: Ближній бій</span><span class="tag">Статус: Прехардмод</span></div></article>
+
+        <!-- Hardmode -->
+        <article class="card"><div class="thumb"><img src="https://pbs.twimg.com/media/E63l8JzUUAIv3SY.jpg" alt="Hallowed Armor"></div><div class="meta"><div class="name">Hallowed Armor</div><div class="def">Def: 20</div></div><div class="desc">Універсальна броня з бонусами під різні стилі гри.</div><div class="tags"><span class="tag">Клас: Універсальний</span><span class="tag">Рівень: Хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.redd.it/a6mv5cjmii551.png" alt="Orichalcum Armor"></div><div class="meta"><div class="name">Orichalcum Armor</div><div class="def">Def: 22</div></div><div class="desc">Має бонуси для магів та дальнього бою.</div><div class="tags"><span class="tag">Клас: Магія / Дальній</span><span class="tag">Рівень: Хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.redd.it/palladium-armor-and-cobalt-armor-v0-ppx6rtkpohfb1.png?width=1387&format=png&auto=webp&s=fd8b52f78322bb9a297f1fd766781a81bc897313" alt="Palladium Armor"></div><div class="meta"><div class="name">Palladium Armor</div><div class="def">Def: 20</div></div><div class="desc">Бонуси до відновлення здоров’я.</div><div class="tags"><span class="tag">Клас: Універсальний</span><span class="tag">Рівень: Хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://pm1.aminoapps.com/6701/6b1df4c65f1c252363237e8f09456d0571db4c86_hq.jpg" alt="Adamantite Armor"></div><div class="meta"><div class="name">Adamantite Armor</div><div class="def">Def: 30</div></div><div class="desc">Має варіанти для різних класів.</div><div class="tags"><span class="tag">Клас: Варіативний</span><span class="tag">Рівень: Хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.redd.it/qt0sq8dh10k71.jpg" alt="Titanium Armor"></div><div class="meta"><div class="name">Titanium Armor</div><div class="def">Def: 28</div></div><div class="desc">Сильний металевий набір.</div><div class="tags"><span class="tag">Клас: Універсальний</span><span class="tag">Рівень: Хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.redd.it/xkq0x12ax3751.png" alt="Chlorophyte Armor"></div><div class="meta"><div class="name">Chlorophyte Armor</div><div class="def">Def: 32</div></div><div class="desc">Має унікальні бонуси і підкласи.</div><div class="tags"><span class="tag">Клас: Варіативний</span><span class="tag">Рівень: Хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://preview.redd.it/beetle-armor-v0-ksn5c0feuo1e1.png?auto=webp&s=4ae8db3de38134c5476d8564360873e62d884d7b" alt="Beetle Armor"></div><div class="meta"><div class="name">Beetle Armor</div><div class="def">Def: 34</div></div><div class="desc">Надає бонуси для танку.</div><div class="tags"><span class="tag">Клас: Ближній бій</span><span class="tag">Рівень: Хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://preview.redd.it/shroomite-armor-v0-xtlyjjrfk43e1.png?auto=webp&s=e1240af9e513968875ee41d594e789bd018c2f4e" alt="Shroomite Armor"></div><div class="meta"><div class="name">Shroomite Armor</div><div class="def">Def: 36</div></div><div class="desc">Один із топових наборів для дальнього бою.</div><div class="tags"><span class="tag">Клас: Дальній</span><span class="tag">Рівень: Пізній хардмод</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://preview.redd.it/spectre-armor-made-up-lore-v0-69j2ypr4cx1e1.png?width=640&crop=smart&auto=webp&s=c2526a4199ad38f4a3ce00ccf1c75cfbadcedd6b" alt="Spectre Armor"></div><div class="meta"><div class="name">Spectre Armor</div><div class="def">Def: 28</div></div><div class="desc">Магічний сет з лікуванням.</div><div class="tags"><span class="tag">Клас: Магія</span><span class="tag">Рівень: Пізній хардмод</span></div></article>
+
+        <!-- Endgame -->
+        <article class="card"><div class="thumb"><img src="https://images.steamusercontent.com/ugc/353896369580635367/F0A4384D2D6D17945721E2751D82F65A79C1A8E5/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Solar Flare Armor"></div><div class="meta"><div class="name">Solar Flare Armor</div><div class="def">Def: 45</div></div><div class="desc">Одна з найпотужніших бронь для танків.</div><div class="tags"><span class="tag">Клас: Ближній бій</span><span class="tag">Рівень: Ендгейм</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.pinimg.com/736x/f8/ff/66/f8ff669ed74e63cd6078ec7e60f2bc7f.jpg" alt="Vortex Armor"></div><div class="meta"><div class="name">Vortex Armor</div><div class="def">Def: 38</div></div><div class="desc">Топовий набір для дальнього стилю.</div><div class="tags"><span class="tag">Клас: Дальній</span><span class="tag">Рівень: Ендгейм</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://i.pinimg.com/736x/09/58/cb/0958cbdd03a9b9d183ffbbb4fea2a9d3.jpg" alt="Nebula Armor"></div><div class="meta"><div class="name">Nebula Armor</div><div class="def">Def: 36</div></div><div class="desc">Найсильніший магічний сет у кінці гри.</div><div class="tags"><span class="tag">Клас: Магія</span><span class="tag">Рівень: Ендгейм</span></div></article>
+        <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGkqEnVlVvWVefPTGH8IaAN_lVKmsNK-XsCw&s" alt="Stardust Armor"></div><div class="meta"><div class="name">Stardust Armor</div><div class="def">Def: 40</div></div><div class="desc">Найкращий сет для сумонів у кінці гри.</div><div class="tags"><span class="tag">Клас: Сумон</span><span class="tag">Рівень: Ендгейм</span></div></article>
+
+    </section>
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
